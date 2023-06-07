@@ -12,14 +12,14 @@ function getMDToken(successCallbackJS, failCallbackJS){
         alert(JSON.stringify(successCallbackJS));
         alert('test552');
     }
-getMDToken();
+//getMDToken();
 
 function callback(v){
 	var actk=v.accessToken;
 	var rftk=v.refreshToken;
 	alert(actk);
 	alert(rftk);
-	alert('test');
+	//alert('test');
 }
 window.wallet["getMDToken"]('{"successCallbackJS":"callback", "failCallbackJS":""}');
 callback();
