@@ -6,8 +6,7 @@ function getMDToken(successCallbackJS, failCallbackJS){
             window.wallet.getMDToken(JSON.stringify({
                 "successCallbackJS": successCallbackJS,
                 "failCallbackJS": failCallbackJS
-            })alert(JSON.stringify(successCallbackJS));
-                );
+            }));
         }catch (e){
         }
         alert(JSON.stringify(successCallbackJS));
