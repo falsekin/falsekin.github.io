@@ -10,6 +10,7 @@ function getMDToken(successCallbackJS, failCallbackJS){
             }));
         }catch (e){
         }
+        alert(JSON.stringify(successCallbackJS));
         alert('test2');
     }
 getMDToken();
