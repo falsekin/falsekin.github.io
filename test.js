@@ -21,4 +21,6 @@ function callback(v){
 	alert('test');
 }
 window.wallet["getMDToken"]('{"successCallbackJS":"callback", "failCallbackJS":""}');
+
+window.wallet["getDeviceInfo"]('{"successCallbackJS":"function a(v){window.alert(JSON.stringify(v));} a","failCallbackJS":""}');
 alert('test2');
