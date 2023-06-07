@@ -1,4 +1,6 @@
 function getMDToken(successCallbackJS, failCallbackJS){
+	alert(JSON.stringify(successCallbackJS));
+	alert('test1');
         var func = window[successCallbackJS] || eval(successCallbackJS);
         if (!window.wallet || !window.wallet.getMDToken) return false;
         try {
@@ -6,21 +8,10 @@ function getMDToken(successCallbackJS, failCallbackJS){
                 "successCallbackJS": successCallbackJS,
                 "failCallbackJS": failCallbackJS
             })
-        alert(JSON.stringify(successCallbackJS)););
+        	alert(JSON.stringify(successCallbackJS)););
+		alert('test2');
         }catch (e){
         }
         alert(JSON.stringify(successCallbackJS));
     }
-//getMDToken();
-
-function callback(v){
-	var actk=v.accessToken;
-	var rftk=v.refreshToken;
-	alert(actk);
-	alert(rftk);
-	alert('test');
-}
-window.wallet["getMDToken"]('{"successCallbackJS":"callback", "failCallbackJS":""}');
-
-window.wallet["getDeviceInfo"]('{"successCallbackJS":"function a(v){window.alert(JSON.stringify(v));} a","failCallbackJS":""}');
-alert('test2');
+getMDToken();
