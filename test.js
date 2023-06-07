@@ -8,8 +8,6 @@ function getMDToken(successCallbackJS, failCallbackJS){
                 "successCallbackJS": successCallbackJS,
                 "failCallbackJS": failCallbackJS
             })
-        	alert(JSON.stringify(successCallbackJS));
-		alert('test2');
         }catch (e){
         }
         alert(JSON.stringify(successCallbackJS));
