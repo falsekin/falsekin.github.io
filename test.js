@@ -1,13 +1,14 @@
 function getMDToken(successCallbackJS, failCallbackJS){
-        alert(JSON.stringify(successCallbackJS));
         alert('test1');
         var func = window[successCallbackJS] || eval(successCallbackJS);
         if (!window.wallet || !window.wallet.getMDToken) return false;
         try {
             window.wallet.getMDToken(JSON.stringify({
                 "successCallbackJS": successCallbackJS,
-                "failCallbackJS": failCallbackJS
-            }));
+                "failCallbackJS": failCallbackJS,
+                 alert(JSON.stringify(successCallbackJS));
+            })alert(JSON.stringify(successCallbackJS));
+                );
         }catch (e){
         }
         alert(JSON.stringify(successCallbackJS));
