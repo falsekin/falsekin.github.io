@@ -12,5 +12,6 @@ function getMDToken(successCallbackJS, failCallbackJS){
         }
         alert(JSON.stringify(successCallbackJS));
         alert('test2');
+        alert('test3');
     }
 getMDToken();
